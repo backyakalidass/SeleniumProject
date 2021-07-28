@@ -1,0 +1,202 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9896913500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "org.facebook.Hooks.hooksample()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "launch the browser",
+            "match": {
+              "location": "org.facebook.FacebookLogin.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10673256300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 988900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "org.facebook.Hooks.hooksample()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "open facebook url",
+            "match": {
+              "location": "org.facebook.FacebookLogin.open_facebook_url()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T03:23:54.423Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5500600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.facebook.Hooks.hooksample3()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Facebook login validation with valid credentials",
+        "description": "",
+        "id": "facebook-login-validation;facebook-login-validation-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.facebook.Hooks.hooksample2()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.facebook.Hooks.hooksample4()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 201914100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "org.facebook.Hooks.hooksample()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "enter the username and passowrd",
+            "match": {
+              "location": "org.facebook.FacebookLogin.enter_the_username_and_passowrd(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "user1",
+                  "pass1"
+                ]
+              },
+              {
+                "cells": [
+                  "user2",
+                  "pass2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83774400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 995200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "org.facebook.Hooks.hooksample()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "click the login button",
+            "match": {
+              "location": "org.facebook.FacebookLogin.click_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "org.facebook.Hooks.hooksample()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "valdate the welcome message",
+            "match": {
+              "location": "org.facebook.FacebookLogin.valdate_the_welcome_message()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Valid"
+          },
+          {
+            "name": "@Invalid"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook login Validation",
+    "description": "",
+    "id": "facebook-login-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features1/FBLogin.feature",
+    "tags": []
+  }
+]
