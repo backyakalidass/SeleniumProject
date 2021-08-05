@@ -21,6 +21,7 @@ public class FacebookLogin extends BaseClass {
 	@Given("launch the browser")
 	public void launch_the_browser() {
 		System.out.println("Launching browser");
+		System.out.println("Launching browser2");
 		driver = BaseClass.setup();
 		l = new LoginPage(driver);
 	}
