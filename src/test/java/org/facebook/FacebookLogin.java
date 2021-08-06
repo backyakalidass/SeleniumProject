@@ -20,7 +20,7 @@ public class FacebookLogin extends BaseClass {
 
 	@Given("launch the browser")
 	public void launch_the_browser() {
-		System.out.println("Launching br");
+		System.out.println("Launching browser from jenkin");
 		System.out.println("Launching browser2");
 		driver = BaseClass.setup();
 		l = new LoginPage(driver);
